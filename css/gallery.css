@@ -1,0 +1,342 @@
+/* line 20, ../sass/gallery.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/gallery.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 25, ../sass/gallery.scss */
+.gallery {
+  position: relative;
+  height: 300px;
+}
+/* line 28, ../sass/gallery.scss */
+.gallery .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  opacity: 0;
+  transition: opacity .25s;
+}
+/* line 38, ../sass/gallery.scss */
+.gallery .item:first-of-type {
+  opacity: 1;
+}
+/* line 42, ../sass/gallery.scss */
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: whiteSmoke;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2em;
+  text-align: center;
+}
+/* line 51, ../sass/gallery.scss */
+.gallery .controls .control-item {
+  color: whiteSmoke;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color .25s;
+}
+/* line 54, ../sass/gallery.scss */
+.gallery .controls .control-item:hover {
+  color: white;
+  color: white;
+}
+/* line 55, ../sass/gallery.scss */
+.gallery .controls .control-item:first-of-type {
+  color: white;
+  color: white;
+}
+
+@-moz-keyframes galleryAnimation {
+  /* line 63, ../sass/gallery.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 64, ../sass/gallery.scss */
+  9.5%, 33% {
+    opacity: 1;
+  }
+
+  /* line 65, ../sass/gallery.scss */
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes galleryAnimation {
+  /* line 63, ../sass/gallery.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 64, ../sass/gallery.scss */
+  9.5%, 33% {
+    opacity: 1;
+  }
+
+  /* line 65, ../sass/gallery.scss */
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation {
+  /* line 63, ../sass/gallery.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 64, ../sass/gallery.scss */
+  9.5%, 33% {
+    opacity: 1;
+  }
+
+  /* line 65, ../sass/gallery.scss */
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes galleryAnimation {
+  /* line 63, ../sass/gallery.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 64, ../sass/gallery.scss */
+  9.5%, 33% {
+    opacity: 1;
+  }
+
+  /* line 65, ../sass/gallery.scss */
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation {
+  /* line 63, ../sass/gallery.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 64, ../sass/gallery.scss */
+  9.5%, 33% {
+    opacity: 1;
+  }
+
+  /* line 65, ../sass/gallery.scss */
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes controlAnimation {
+  /* line 68, ../sass/gallery.scss */
+  0% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* line 69, ../sass/gallery.scss */
+  9.5%, 33% {
+    color: white;
+    color: white;
+  }
+
+  /* line 70, ../sass/gallery.scss */
+  42.9%, 100% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes controlAnimation {
+  /* line 68, ../sass/gallery.scss */
+  0% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* line 69, ../sass/gallery.scss */
+  9.5%, 33% {
+    color: white;
+    color: white;
+  }
+
+  /* line 70, ../sass/gallery.scss */
+  42.9%, 100% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation {
+  /* line 68, ../sass/gallery.scss */
+  0% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* line 69, ../sass/gallery.scss */
+  9.5%, 33% {
+    color: white;
+    color: white;
+  }
+
+  /* line 70, ../sass/gallery.scss */
+  42.9%, 100% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-ms-keyframes controlAnimation {
+  /* line 68, ../sass/gallery.scss */
+  0% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* line 69, ../sass/gallery.scss */
+  9.5%, 33% {
+    color: white;
+    color: white;
+  }
+
+  /* line 70, ../sass/gallery.scss */
+  42.9%, 100% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation {
+  /* line 68, ../sass/gallery.scss */
+  0% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* line 69, ../sass/gallery.scss */
+  9.5%, 33% {
+    color: white;
+    color: white;
+  }
+
+  /* line 70, ../sass/gallery.scss */
+  42.9%, 100% {
+    color: whiteSmoke;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* line 75, ../sass/gallery.scss */
+.gallery.autoplay .item {
+  -webkit-animation: galleryAnimation 21s infinite;
+  -moz-animation: galleryAnimation 21s infinite;
+  -ms-animation: galleryAnimation 21s infinite;
+  -o-animation: galleryAnimation 21s infinite;
+  animation: galleryAnimation 21s infinite;
+}
+/* line 76, ../sass/gallery.scss */
+.gallery.autoplay .controls .control-item {
+  -webkit-animation: controlAnimation 21s infinite;
+  -moz-animation: controlAnimation 21s infinite;
+  -ms-animation: controlAnimation 21s infinite;
+  -o-animation: controlAnimation 21s infinite;
+  animation: controlAnimation 21s infinite;
+}
+/* line 77, ../sass/gallery.scss */
+.gallery .control-operator {
+  display: none;
+}
+/* line 79, ../sass/gallery.scss */
+.gallery .control-operator:target ~ .item {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+/* line 80, ../sass/gallery.scss */
+.gallery .control-operator:target ~ .controls .control-item {
+  color: whiteSmoke;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+/* line 82, ../sass/gallery.scss */
+.gallery .control-operator:target ~ .controls .control-item:hover {
+  color: white;
+  color: white;
+}
+/* line 89, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  opacity: 1;
+}
+/* line 90, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(1):target ~ .controls .control-item:nth-of-type(1) {
+  color: white;
+  color: white;
+}
+/* line 93, ../sass/gallery.scss */
+.gallery .item:nth-of-type(1),
+.gallery .controls .control-item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -moz-animation-delay: -2s;
+  -ms-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+/* line 89, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  opacity: 1;
+}
+/* line 90, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(2):target ~ .controls .control-item:nth-of-type(2) {
+  color: white;
+  color: white;
+}
+/* line 93, ../sass/gallery.scss */
+.gallery .item:nth-of-type(2),
+.gallery .controls .control-item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+/* line 89, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  opacity: 1;
+}
+/* line 90, ../sass/gallery.scss */
+.gallery .control-operator:nth-of-type(3):target ~ .controls .control-item:nth-of-type(3) {
+  color: white;
+  color: white;
+}
+/* line 93, ../sass/gallery.scss */
+.gallery .item:nth-of-type(3),
+.gallery .controls .control-item:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
